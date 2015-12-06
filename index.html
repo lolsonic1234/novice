@@ -4,6 +4,7 @@
     <head>
         <title>Novice</title>
         <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="hotbar" align="center">
@@ -20,15 +21,81 @@
             </div>
         </div>
         <div class="rulesOpener">
-
+            <h1 class="rulesText">RULES</h1>
+            <h1 class="rulesText">-------------------------------------------</h1>
+            
+            <h1 class="rulesText">Rule number 1</h1>
+            <h1 class="rulesText">No, NSFW please dear god!</h1>
+            <h1 class="rulesText">-------------------------------------------</h1>
+            <h1 class="rulesText">Rule number 2</h1>
+            <h1 class="rulesText">No stealing my hat.</h1>
+            <h1 class="rulesText">-------------------------------------------</h1>
+            <h1 class="rulesText">Rule number 3</h1>
+            <h1 class="rulesText">Dont be rude to me please.</h1>
+            <h1 class="rulesText">~Oh why you gotta be so ruuude?~</h1>
+            <h1 class="rulesText">~Baby dont you know im human toooo.~</h1>
+            <h1 class="rulesText">-------------------------------------------</h1>
+            <h1 class="rulesText">Rule number 4</h1>
+            <h1 class="rulesText">Have some ice cream.</h1>
         </div>
+        
+        <div class="bioOpener">
+            <h1 class="rulesText">BIO</h1>
+            <img src="http://orig05.deviantart.net/d43b/f/2015/314/3/d/2_by_anthony_daluz-d9g9ofw.png" class="image"/>
+            <h1 class="bioText">Hello!</h1>
+            <h1 class="bioText">I am Novice!</h1>
+            <h1 class="bioText">Appearence ---></h1>
+            <h1 class="bioText">I am a stupid kid I know.</h1>
+        </div>
+        
+        <div class="fafOpener">
+            <h1 class="rulesText">Friends and Family</h1>
+            <h1>AYATSUMI</h1>
+            <div class="aya" style="background-color: pink;">
+                <img id="aya" src="http://data.whicdn.com/images/78009680/large.png"/>
+                <h1 class="ayaText">This is aya!</h1>
+                <h1 class="ayaText">She is my Best Friend!</h1>
+                <h1 class="ayaText">Hurt her, and i will hurt you.</h1>
+            </div>
+        </div>
+        
     </body>
     
     <style>
-    
-        h1 {
-            font-size: 25px
+        
+        .ayaText{
+            text-align: left;
+            margin-top: 60px;
         }
+        
+        #aya{
+            border-radius: 100%;
+            width: 200px;
+            position: absolute;
+            right: 0px;
+            margin-top: -50px;
+            margin-right: 50px;
+        }
+        
+        .image {
+            width: 250px;
+            position: absolute;
+            right: 30%;
+        }
+        
+        h1 {
+            font-size: 20px;
+            font-family: 'Russo One';
+            text-align: center
+        }
+        
+        .bioText {
+            font-size: 20px;
+            font-family: 'Russo One';
+            text-align: left;
+            margin-left: 20px;
+        }
+        
         body {
             background-color: #4D001F;
         }
@@ -53,6 +120,25 @@
             margin-left: 0px;
             margin-right: 0px;
             width: 220px;
+        }
+        
+        .rulesOpener {
+            display: block;
+            background-color: pink;
+            border-radius: 5px;
+        }
+        
+        .bioOpener {
+            display: none;
+            background-color: pink;
+            border-radius: 5px;
+            height: 550px;
+        }
+        
+        .fafOpener {
+            display: none;
+            background-color: pink;
+            border-radius: 5px;
         }
     </style>
     
