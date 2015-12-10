@@ -40,12 +40,20 @@
         </div>
         
         <div class="bioOpener">
-            <h1 class="rulesText">BIO</h1>
-            <img src="http://orig05.deviantart.net/d43b/f/2015/314/3/d/2_by_anthony_daluz-d9g9ofw.png" class="image"/>
-            <h1 class="bioText">Hello!</h1>
-            <h1 class="bioText">I am Novice!</h1>
-            <h1 class="bioText">Appearence ---></h1>
-            <h1 class="bioText">I am a stupid kid I know.</h1>
+            <div class="BioButtonN">
+                <h1 class="bioButtonTextN">NOVICE</h1>
+            </div>
+            <div class="BioButtonS">
+                <h1 class="bioButtonTextS">SOUL LINKER</h1>
+            </div>
+            <div class="BiotestN" id="novice">
+                <h1 class="bioText">Novice</h1>
+                <img src="http://orig05.deviantart.net/d43b/f/2015/314/3/d/2_by_anthony_daluz-d9g9ofw.png" class="noviceImg"/>
+            </div>
+            <div class="BiotestS" id="soullinker">
+                <h1 class="bioText">Soul Linker</h1>
+                <h1 class="bioTextWIP">[---------]W~I~P[---------]</h1>
+            </div>
         </div>
         
         <div class="fafOpener">
@@ -63,6 +71,64 @@
     
     <style>
         
+        .noviceImg{
+            height: 75%;
+            float: right;
+            margin-right: 25px;
+        }
+        
+        .BiotestN {
+            display: none;
+            background-color: #FFA8DD;
+            position: absolute;
+            border-radius: 5px;
+            height: 0px;
+            min-width: 75%;
+            right: 0;
+            margin-top: -127.5px;
+            margin-right: 25px;
+        }
+        
+        .BiotestS {
+            display: none;
+            background-color: #FFA8DD;
+            position: absolute;
+            border-radius: 5px;
+            height: 0px;
+            min-width: 75%;
+            right: 0;
+            margin-top: -127.5px;
+            margin-right: 25px;
+        }
+        
+        .BioButtonN {
+            background-color: #FFA8DD;
+            width: 137.5px;
+            border-radius: 50px;
+            transition: background-color .5s;
+        }
+        
+        .BioButtonN:hover {
+            background-color: #FFD2EE;
+            width: 137.5px;
+            border-radius: 50px;
+            transition: background-color .5s;
+        }
+        
+        .BioButtonS {
+            background-color: #FFA8DD;
+            width: 137.5px;
+            border-radius: 50px;
+            transition: background-color .5s;
+        }
+        
+        .BioButtonS:hover {
+            background-color: #FFD2EE;
+            width: 137.5px;
+            border-radius: 50px;
+            transition: background-color .5s;
+        }
+        
         .ayaText{
             text-align: left;
             margin-top: 60px;
@@ -70,7 +136,7 @@
         
         #aya{
             border-radius: 100%;
-            width: 200px;
+            height: 33%;
             position: absolute;
             right: 0px;
             margin-top: -50px;
@@ -90,7 +156,27 @@
         }
         
         .bioText {
-            font-size: 20px;
+            font-size: 125%;
+            font-family: 'Russo One';
+            text-align: left;
+            margin-left: 20px;
+        }
+        
+        .bioTextWIP {
+            font-size: 250%;
+            font-family: 'Russo One';
+            text-align: center;
+        }
+        
+        .bioButtonTextN {
+            font-size: 160%;
+            font-family: 'Russo One';
+            text-align: left;
+            margin-left: 20px;
+        }
+        
+        .bioButtonTextS {
+            font-size: 160%;
             font-family: 'Russo One';
             text-align: left;
             margin-left: 20px;
@@ -126,19 +212,22 @@
             display: block;
             background-color: pink;
             border-radius: 5px;
+            height: 600px;
+            margin-top: 15px;
         }
         
         .bioOpener {
             display: none;
-            background-color: pink;
             border-radius: 5px;
-            height: 550px;
+            height: 0px;
+            margin-top: 25px;
         }
         
         .fafOpener {
             display: none;
             background-color: pink;
-            border-radius: 5px;
+            border-radius: 0px;
+            margin-top: 15px;
         }
     </style>
     
@@ -149,3 +238,4 @@
     <script src="profile.js"></script>
     
 </html>
+
