@@ -6,8 +6,6 @@ $(document).ready(function(){
 
 $('.rules').click(function(){
     
-    $( '#novice' ).css( "display", "none" );
-    $( '#novice' ).css( "height", "0px" );
     $( '.bioOpener' ).css( "display", "none" );
     $( '.bioOpener' ).css( "height", "0px" );
     $( '.fafOpener' ).css( "height", "0px" );
@@ -32,8 +30,6 @@ $('.bio').click(function(){
 
 $('.faf').click(function(){
     
-    $( '#novice' ).css( "display", "none" );
-    $( '#novice' ).css( "height", "0px" );
     $( '.rulesOpener' ).css( "display", "none" );
     $( '.rulesOpener' ).css( "height", "0px" );
     $( '.fafOpener' ).css( "display", "block" );
@@ -46,6 +42,8 @@ $('.faf').click(function(){
 
 $('.bioButtonTextN').click(function(){
     
+    $( '#noviceBack' ).css( "display", "none" );
+    $( '#noviceBack' ).css( "height", "0px" );
     $( '#soullinker' ).css( "display", "none" );
     $( '#soullinker' ).css( "height", "0px" );
     $( '#novice' ).css( "display", "block" );
@@ -56,10 +54,26 @@ $('.bioButtonTextN').click(function(){
 
 $('.bioButtonTextS').click(function(){
     
+    $( '#noviceBack' ).css( "display", "none" );
+    $( '#noviceBack' ).css( "height", "0px" );
     $( '#novice' ).css( "display", "none" );
     $( '#novice' ).css( "height", "0px" );
     $( '#soullinker' ).css( "display", "block" );
     $( '#soullinker' ).animate({height: "600px"});
     console.log(".bioButtonS was Clicked");
     
+});
+
+$( '#backN' ).click(function(){
+    $( '#novice' ).css( "display", "none" );
+    $( '#novice' ).css( "height", "0px" );
+    $( '#noviceBack' ).css( "display", "block" );
+    $( '#noviceBack' ).animate({height: "600px"});
+});
+
+$( '#backNT' ).click(function(){
+    $( '#noviceBack' ).css( "display", "none" );
+    $( '#noviceBack' ).css( "height", "0px" );
+    $( '#novice' ).css( "display", "block" );
+    $( '#novice' ).animate({height: "600px"});
 });
