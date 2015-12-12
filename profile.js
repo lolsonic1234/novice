@@ -45,6 +45,8 @@ $('.bioButtonTextN').click(function(){
     $( '#noviceBack' ).css( "display", "none" );
     $( '#noviceBack' ).css( "height", "0px" );
     $( '#soullinker' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "display", "none" );
     $( '#soullinker' ).css( "height", "0px" );
     $( '#novice' ).css( "display", "block" );
     $( '#novice' ).animate({height: "600px"});
@@ -58,6 +60,8 @@ $('.bioButtonTextS').click(function(){
     $( '#noviceBack' ).css( "height", "0px" );
     $( '#novice' ).css( "display", "none" );
     $( '#novice' ).css( "height", "0px" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "display", "none" );
     $( '#soullinker' ).css( "display", "block" );
     $( '#soullinker' ).animate({height: "600px"});
     console.log(".bioButtonS was Clicked");
@@ -76,4 +80,20 @@ $( '#backNT' ).click(function(){
     $( '#noviceBack' ).css( "height", "0px" );
     $( '#novice' ).css( "display", "block" );
     $( '#novice' ).animate({height: "600px"});
+});
+
+$( '#backS' ).click(function(){
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
+    $( '#slBack' ).css( "display", "block" );
+    $( '#slBack' ).css( "margin-top", "-600px" );
+    $( '#slBack' ).animate({height: "600px"});
+});
+
+$( '#backST' ).click(function(){
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
+    $( '#soullinker' ).css( "display", "block" );
+    $( '#soullinker' ).animate({height: "600px"});
 });
