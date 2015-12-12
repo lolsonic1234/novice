@@ -75,11 +75,33 @@
             
             
             <div class="BiotestS" id="soullinker">
-                <h1 class="bioText">Soul Linker</h1>
-                <h1 class="bioTextWIP">[---------]W~I~P[---------]</h1>
+                <h1 class="bioText">Name: Soul Linker</h1>
+                <h1 class="bioText">Age: 10</h1>
+                <h1 class="bioText">Gender: Male</h1>
+                <h1 class="bioText">Height: 4'8</h1>
+                <br>
+                <h1 class="bioText">Likes: The Unknown</h1>
+                <h1 class="bioText">Dislikes: The All Knowing.</h1>
+                <br>
+                <h1 class="bioText">Personality: Shy, Silent,</h1>
+                <h1 class="bioText">scared and curious</h1>
+                <br>
+                <h1 class="bioText">Powers: Soul link, </h1>
+                <h1 class="bioText">and Soul Protection</h1>
+                <div class="slBackstory">
+                    <h1 class="bioText" id="backS">BackStory</h1>
+                </div>
                 <img src="http://orig12.deviantart.net/0f7a/f/2015/344/c/0/soul_linker_by_anthony_daluz-d9jn614.png" class="soulImg"/>
             </div>
         </div>
+        
+        <div class="BiotestS" id="slBack">
+                <h1>Soul Linker's Bio</h1>
+                <h1 class="bioTextWIP">[---------]W~I~P[---------]</h1>
+                <div class="slBackstoryB">
+                <h1 class="bottom" id="backST">Back</h1>
+                </div>
+            </div>
         
         <div class="fafOpener">
             <h1 class="rulesText">Friends and Family</h1>
@@ -113,6 +135,39 @@
             transition: background-color .5s;
         }
         
+        .slBackstory {
+            background-color: pink;
+            width: 195px;
+            margin-left: 30px;
+            border-radius: 5px;
+            transition: background-color .5s;
+            margin-top: -50px;
+        }
+        
+        .slBackstory:hover {
+            background-color: #FFD2EE;
+            width: 195px;
+            margin-left: 30px;
+            border-radius: 5px; 
+            transition: background-color .5s;
+        }
+        
+        .slBackstoryB {
+            background-color: pink;
+            width: 115px;
+            margin-left: 30px;
+            border-radius: 5px;
+            transition: background-color .5s;
+        }
+        
+        .slBackstoryB:hover {
+            background-color: #FFD2EE;
+            width: 115px;
+            margin-left: 30px;
+            border-radius: 5px; 
+            transition: background-color .5s;
+        }
+        
         .noviceBackstoryB {
             background-color: pink;
             width: 115px;
@@ -135,7 +190,17 @@
             font-size: 30px;
         }
         
+        #backS {
+            margin-top: 100px;
+            font-size: 30px;
+        }
+        
         #backNT {
+            margin-top: 100px;
+            font-size: 30px;
+        }
+        
+        #backST {
             margin-top: 100px;
             font-size: 30px;
         }
@@ -149,9 +214,12 @@
         }
         
         .soulImg{
+            margin-top: -580px;
             height: 75%;
             float: right;
             margin-right: 25px;
+            position: absolute;
+            right: 0;
         }
         
         .BiotestN {
