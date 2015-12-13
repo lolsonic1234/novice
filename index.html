@@ -4,6 +4,7 @@
     <head>
         <title>Novice</title>
         <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -131,22 +132,77 @@
             </div>
         </div>
         <div class="demon">
-        <img class="blood" src="http://www.clipartbest.com/cliparts/7ia/oE6/7iaoE6BrT.gif"/>
+            
+            <img class="eye" src="http://1.bp.blogspot.com/-jeVr0RZDd9I/TnJ_BPh8crI/AAAAAAAAABU/vG4I3t18B88/s364/Red%2BEye%2B%25280-00-00-00%2529_1.jpg"/>
+            
+            <img class="blood" src="http://www.clipartbest.com/cliparts/7ia/oE6/7iaoE6BrT.gif"/>
+            
+            <div class="mainDemon">
+                <div class="demonhotbar" align="center">
+                    <div id="DinHotbar">
+                        <h1 align="center" class="d">NO RULES DOWN HERE</h1>
+                    </div>
+
+                    <div id="DinHotbar">
+                        <h1 align="center" class="d">SAY HI TO US</h1>
+                    </div>
+
+                    <div id="DinHotbar">
+                        <h1 align="center" class="d2">NOTHING EXISTS HERE</h1>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </body>
     
     <style>
         
+        .eye {
+            -webkit-filter: grayscale(100%);
+            position: absolute;
+            height: 90%;
+            width: 90%;
+            opacity: .12;
+        }
+        
+        .d {
+            font-size: 100%;
+            font-family: 'Nothing You Could Do';
+            text-align: center
+        }
+        
+        .d2 {
+            font-size: 100%;
+            font-family: 'Nothing You Could Do';
+            text-align: center
+        }
+        
+        .demonhotbar {
+            background-color: dimgrey;
+            vertical-align: middle;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
         .blood {
+            opacity: .28;
+            -webkit-filter: grayscale(100%);
             min-width: 100%;
             position: absolute;
             right: 0px;
             top: 0px;
+            max-height: 100%;
+            min-height: 100%;
         }
         
         .demon {
             display: none;
             background-color: black;
+        }
+        
+        .mainDemon {
+            position: relative;
         }
         
         .noviceBackstory {
@@ -383,6 +439,24 @@
             background-color: pink;
             margin-top: 30px;
         }
+        
+        #DinHotbar {
+            transition: background-color .5s;
+            background-color: #505050;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 220px;
+            display: inline-block;
+        }
+        #DinHotbar:hover {
+            transition: background-color .5s;
+            display: inline-block;
+            background-color: #FFFFFF;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 220px;
+        }
+        
         #inHotbar {
             transition: background-color .5s;
             background-color: #FFA8DD;
