@@ -1,11 +1,39 @@
 console.log("Javascript loaded up!");
 
+var hits = 5;
+
+var clicks = 0;
+
+var colors = []
+
+colors["bodyColor"] = {red: 77, green: 0, blue: 31};
+
 $(document).ready(function(){
     console.log("Jquery Opened Up!");
 });
 
+$('.BioButtonD').click(function(){
+    clicks++;
+    console.log(clicks);
+    colors['bodyColor']['red'] = colors['bodyColor']['red'] - hits;
+    
+    colors['bodyColor']['blue'] = colors['bodyColor']['blue'] - hits;
+    
+    $( 'body' ).css( "background-color", "rgb(" + colors['bodyColor']['red'] + "," + colors['bodyColor']['green'] + ", " + colors['bodyColor']['blue']);
+    
+    if(clicks >= 15){
+        $( '.mainBody' ).css("display", "none");
+        $( '.demon' ).css("display", "block");
+    }
+});
+
 $('.rules').click(function(){
     
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
     $( '.bioOpener' ).css( "display", "none" );
     $( '.bioOpener' ).css( "height", "0px" );
     $( '.fafOpener' ).css( "height", "0px" );
@@ -18,6 +46,11 @@ $('.rules').click(function(){
 
 $('.bio').click(function(){
     
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
     $( '.rulesOpener' ).css( "display", "none" );
     $( '.rulesOpener' ).css( "height", "0px" );
     $( '.bioOpener' ).css( "display", "block" );
@@ -30,6 +63,9 @@ $('.bio').click(function(){
 
 $('.faf').click(function(){
     
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
     $( '.rulesOpener' ).css( "display", "none" );
     $( '.rulesOpener' ).css( "height", "0px" );
     $( '.fafOpener' ).css( "display", "block" );
@@ -42,6 +78,11 @@ $('.faf').click(function(){
 
 $('.bioButtonTextN').click(function(){
     
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
     $( '#noviceBack' ).css( "display", "none" );
     $( '#noviceBack' ).css( "height", "0px" );
     $( '#soullinker' ).css( "display", "none" );
@@ -56,6 +97,13 @@ $('.bioButtonTextN').click(function(){
 
 $('.bioButtonTextS').click(function(){
     
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
     $( '#noviceBack' ).css( "display", "none" );
     $( '#noviceBack' ).css( "height", "0px" );
     $( '#novice' ).css( "display", "none" );
