@@ -116,6 +116,26 @@ $('.bioButtonTextS').click(function(){
     
 });
 
+$('.bioButtonTextND').click(function(){
+    
+    $( '.bioTestSD' ).css( "display", "none" );
+    $( '.bioTestSD' ).css( "height", "0px" );
+    $( '.bioTestND' ).css( "display", "block" );
+    $( '.bioTestND' ).animate({height: "600px"});
+    console.log(".bioButtonND was Clicked");
+    
+});
+
+$('.bioButtonTextSD').click(function(){
+    
+    $( '.bioTestND' ).css( "display", "none" );
+    $( '.bioTestND' ).css( "height", "0px" );
+    $( '.bioTestSD' ).css( "display", "block" );
+    $( '.bioTestSD' ).animate({height: "600px"});
+    console.log(".bioButtonSD was Clicked");
+    
+});
+
 $( '#backN' ).click(function(){
     $( '#novice' ).css( "display", "none" );
     $( '#novice' ).css( "height", "0px" );
@@ -144,4 +164,17 @@ $( '#backST' ).click(function(){
     $( '#slBack' ).css( "margin-top", "-127.5px" );
     $( '#soullinker' ).css( "display", "block" );
     $( '#soullinker' ).animate({height: "600px"});
+});
+
+$('.d').click(function(){
+    
+    $( '#slBack' ).css( "display", "none" );
+    $( '#slBack' ).css( "height", "0px" );
+    $( '#slBack' ).css( "margin-top", "-127.5px" );
+    $( '#soullinker' ).css( "display", "none" );
+    $( '#soullinker' ).css( "height", "0px" );
+    $( '.bioOpenerD' ).css( "display", "block" );
+    $( '.bioOpenerD' ).animate({height: "600px"});
+    console.log(".d was Clicked");
+    
 });
